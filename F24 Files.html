@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> System Design - Student GitHub Servers   </title>
+	<meta charset="UTF-8">
+</head>
+
+<style>	
+	.center {	  margin-left: auto;	
+				  margin-right: auto;
+	}
+	p  { font-size : large; }
+	h1 { text-align:center; }
+	th { font-size:large; padding: 10px 10px 10px 10px; background:grey; text-align:center; }
+	td { font-size:large; padding: 5px 5px 5px 5px; text-align:center;}
+</style> 	
+
+
+
+<body onload="makeList()">	<h1> System Design - Student GitHub Servers   </h1>
+	
+	<table border=1 class='center' id="myTable"> 
+	<tr> 
+		<th> Last Name </th>	<th> GitHub URL </th>  <th> hello </th>  <th> Fridge App</th>	
+	</tr> 
+	
+	<tr>
+		<td id="c1">  </td>
+		<td id="c2">  </td>
+		<td id="c3">  </td>
+		<td id="c4">  </td>
+	
+	</tr> 	
+	</table>	
+	
+	<footer>
+		<hr>
+		<small> &copy; A. Tokash -  October 30, 2024 </small> 
+	</footer>	
+</body>
+
+
+<script>
+     function makeList(){
+	    // alert(1);
+		
+		output = ""; 
+		c1text = ""; 
+		c2text = ""; 
+		c3text = ""; 
+		c4text = ""; 
+		
+		users = ["Andrew/aptokash", 
+			     "Aidan A/--",
+				 "Aidan D/--",
+				 "Alexander/--",
+				 "Alondra/--",
+				 "Christian F/--",
+				 "Christian R/--",
+				 "Diego/--",               
+				 "Gabrielle/--",
+				 "Hannah/--",
+				 "Jackson/--",
+				 "James/--",
+				 "Jimy/--",
+				 "Jonathan/--",
+				 "Jozef/--",
+				 "Justin/--",
+				 "Kevin/--",
+				 "Kyle/--",
+				 "Owen/--",
+				 "Patrick/--",
+				 "Ralph/--",
+				 "Rian/--",
+				 "Robsen/--",
+				 "Steven/--",
+				 "Zachary/--"
+				];
+						
+		for (var i = 0; i < users.length; i++) { 
+			thisuser =  users[i];
+			ptr = thisuser.indexOf("/"); 
+			
+						
+			username = thisuser.substr(0,ptr);
+			thisuser = thisuser.substr(ptr+1);
+					
+						
+			
+			c1text += username + "<br>"; 
+			
+			if (thisuser != "--"){
+				c2text += "https://<b>" + thisuser + "</b>.github.io/SD330/ <br>"; 
+				c3text += "<a href='https://" + thisuser + ".github.io/SD330/'> hello </a> <br>"; 
+				c4text += "<a href='https://" + thisuser + ".github.io/SD330/FRIDGE/'> fridge </a> <br>"; 
+			}
+			else { c2text += "N/A <br>";
+				   c3text += "... <br>";
+				   c4text += "... <br>";
+			}			
+		}
+		
+		c1 = document.getElementById("c1");
+			c1.innerHTML = c1text;
+		c2 = document.getElementById("c2");
+			c2.innerHTML = c2text;
+		c3 = document.getElementById("c3");
+			c3.innerHTML = c3text;
+		c4 = document.getElementById("c4");
+			c4.innerHTML = c4text;
+	 }
+</script>
+
+
+
+</html>
+
