@@ -1,0 +1,22 @@
+{
+  "userTypes":  {
+	"adult": {
+		"access": "full",
+		"password": "HardPW1"
+	},
+	"child": {
+		"access": "half",
+		"password": "EasyPW1"
+	}
+  },
+    "userIDs":  {
+	"tokash": {
+	           "name": "Andrew Tokash",
+		   "password": "12345678"
+        },
+        "marquez": {
+	       	   "name": "Gabriel Garcia Marquez",
+	           "password": "nobel11"
+	 	}
+	}      
+}      
