@@ -21,7 +21,7 @@
 	
 	<table border=1 class='center' id="myTable"> 
 	<tr> 
-		<th> Last Name </th>	<th> GitHub URL </th>  <th> hello </th>  <th> Fridge App</th>	
+		<th> Last Name </th>	<th> GitHub URL </th>  <th> hello </th>  <th> Fridge App</th>	<th> Parking Json </th>
 	</tr> 
 	
 	<tr>
@@ -29,6 +29,7 @@
 		<td id="c2">  </td>
 		<td id="c3">  </td>
 		<td id="c4">  </td>
+		<td id="c5">  </td>
 	
 	</tr> 	
 	</table>	
@@ -49,6 +50,7 @@
 		c2text = ""; 
 		c3text = ""; 
 		c4text = ""; 
+		c5text = ""; 
 		
 		users = ["Andrew/aptokash", 
 			     "Aidan A/AALBELLI",
@@ -93,10 +95,13 @@
 				c2text += "https://<b>" + thisuser + "</b>.github.io/SD330/ <br>"; 
 				c3text += "<a href='https://" + thisuser + ".github.io/SD330/'> hello </a> <br>"; 
 				c4text += "<a href='https://" + thisuser + ".github.io/SD330/fridge.html'> fridge </a> <br>"; 
+				c5text += "<a href='https://" + thisuser + ".github.io/SD330/parking.json'> parking.json </a> <br>"; 
 			}
 			else { c2text += "N/A <br>";
 				   c3text += "... <br>";
 				   c4text += "... <br>";
+				   c4text += "... <br>";
+				   c5text += "... <br>";
 			}			
 		}
 		
@@ -108,6 +113,8 @@
 			c3.innerHTML = c3text;
 		c4 = document.getElementById("c4");
 			c4.innerHTML = c4text;
+		c5 = document.getElementById("c5");
+			c5.innerHTML = c5text;
 	 }
 </script>
 
