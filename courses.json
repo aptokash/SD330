@@ -1,0 +1,16 @@
+{
+  "courses":  {
+	"306-111": {
+		"name": "Data Communications",
+		"professor": "Tokash"
+	},
+	"306-112": {
+		"name": "Data Communications",
+		"professor": "Aneja"
+	},
+	"306-113": {
+		"name": "Data Communications",
+		"professor": "Zhang"
+	},
+  }      
+}
